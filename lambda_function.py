@@ -35,10 +35,10 @@ def main(event=None, context=None):
 
     except Exception as e:
 
-        send_message("Nimadur xato ketdi.\nAdminlarimiz bu bilan shug'illanishmoqda.\nBirozdan so'ng qayta urinib ko'ring!",
-         message['chat']['id'])
-        send_message(str(e), chat_id=consts.BAGS_GROUP)
-        send_error_message(consts.BAGS_GROUP)
+        # send_message("Nimadur xato ketdi.\nAdminlarimiz bu bilan shug'illanishmoqda.\nBirozdan so'ng qayta urinib ko'ring!",
+        #  message['chat']['id'])
+        send_message(str(e), chat_id=consts.ADMIN_ID)
+        send_error_message(consts.ADMIN_ID)
 
         if __name__ != "__main__" and type(event['body']) != dict:
             message = json.loads(event['body'])
