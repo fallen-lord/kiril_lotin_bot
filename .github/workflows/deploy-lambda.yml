@@ -35,4 +35,4 @@ jobs:
           AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           AWS_REGION: ${{ secrets.AWS_REGION }}
         run: |
-          aws lambda update-function-code --function-name malaka_oshirish_version_2 --zip-file fileb://./lambda_function.zip
+          aws lambda update-function-code --function-name kiril_to_lotin_bot --zip-file fileb://./lambda_function.zip
