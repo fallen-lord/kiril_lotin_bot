@@ -29,6 +29,26 @@ def main(event=None, context=None):
         for i in translate(text):
             send_message(user_id, i)
 
+        # message = get_message(event)
+
+        # if message is None:
+        #     message_id = callback_query['id']
+        #     user_id = callback_query['from']['id']
+        # else:
+        #     message_id = str(message['message_id'])
+        #     # user_id = str(message['chat']['id'])
+        # user = models.get_user(message or user_id)
+
+        # if (user is None 
+        #     or ((message_id == user['last_message_id']) and (__name__ != "__main__"))
+        #     or (user['accept_message_status'] != "True")):
+        #     return
+        
+        # user['last_message_id'] = message_id
+        # models.save_user(user)
+        # print(message, "1111111111")
+
+
     except ConnectionError:
         send_message("Sayt bilan bog'lanishda xatolik.\nQayta urinib ko'ring!", message['chat']['id'])
 
