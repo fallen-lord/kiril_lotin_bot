@@ -18,7 +18,8 @@ def main(event=None, context=None):
     try:
 
         message = get_message(event)
-        if message.get("message_id") is None:
+
+        if message is None or message.get("message_id") is None:
             return
 
         text = message.get("text")
