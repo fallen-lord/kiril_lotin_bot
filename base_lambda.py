@@ -16,6 +16,8 @@ def get_message(event,):
         res = tgbot.get_updates()
         # print(utils.dict_to_pretty_str(res["result"]))
         last_message = res["result"][-1]
+    if not last_message:
+        return
     last_message = (
         last_message.get("message")
         or last_message.get("callback_query")
