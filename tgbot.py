@@ -148,9 +148,10 @@ def send_request(url, params, files=None, as_data_params=None):
 
 
 if __name__ == "__main__" and not TEST_MODE:
-    set_webhook(
-        "https://ynjraq1b3h.execute-api.ap-northeast-1.amazonaws.com/default/malaka_oshirish_version_2"
-    )
+    # set_webhook(
+    #     "https://ynjraq1b3h.execute-api.ap-northeast-1.amazonaws.com/default/malaka_oshirish_version_2"
+    # )
     # delete_webhook()
+    pass
 
 

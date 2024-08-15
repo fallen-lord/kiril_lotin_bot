@@ -58,5 +58,9 @@ def lambda_handler(event=None, context=None):
 
 if __name__ == "__main__":
 
-    lambda_handler()
+    # lambda_handler()
     # print(len("UC5gXL8j"))
+    # tgbot.delete_webhook()
+    tgbot.set_webhook(
+        "https://8kvhxto05b.execute-api.ap-northeast-2.amazonaws.com/default_AAF5JcouiKK4z/kiril_to_lotin_bot"
+    )
